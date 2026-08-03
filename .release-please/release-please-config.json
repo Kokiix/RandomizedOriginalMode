@@ -2,7 +2,14 @@
     "packages": {
         ".": {
             "release-type": "simple",
-            "skip-changelog": true
+            "skip-changelog": true,
+            "extra-files": [
+                {
+                "type": "json",
+                "path": "manifest.json",
+                "jsonpath": "$.version_number"
+                }
+            ]
         }
     }
 }
