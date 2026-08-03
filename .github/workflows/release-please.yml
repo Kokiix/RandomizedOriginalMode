@@ -36,7 +36,7 @@ jobs:
             echo "MOD_NAME=$MOD_NAME" >> $GITHUB_ENV
 
             mkdir --parents "mods-unpacked/koki-$MOD_NAME"
-            mv src/* "mods-unpacked/koki-$MOD_NAME/"
+            mv manifest.json mod_main.gd src/* "mods-unpacked/koki-$MOD_NAME/"
             zip -r "$MOD_NAME-${{ needs.release-please.outputs.tag_name }}.zip" mods-unpacked
           
         - uses: softprops/action-gh-release@v2
