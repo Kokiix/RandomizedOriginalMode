@@ -34,7 +34,7 @@ jobs:
         - run: |
             MOD_NAME=$(cat src/manifest.json | jq -r '.name')
             echo "MOD_NAME=$MOD_NAME" >> $GITHUB_ENV
-            
+
             mkdir --parents "mods-unpacked/koki-$MOD_NAME"
             mv src/* "mods-unpacked/koki-$MOD_NAME/"
             zip -r "$MOD_NAME-${{ needs.release-please.outputs.tag_name }}.zip" mods-unpacked
@@ -42,4 +42,4 @@ jobs:
         - uses: softprops/action-gh-release@v2
           with:
             tag_name: ${{ needs.release-please.outputs.tag_name }}
-            files: ${{env.MOD_NAME}}-${{ needs.release-please.outputs.tag_name }}
+            files: ${{env.MOD_NAME}}-${{ needs.release-please.outputs.tag_name }}.zip
