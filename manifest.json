@@ -1,15 +1,28 @@
 {
-	"name": "RandomizedClassicMode",
-	"namespace": "koki",
-	"version_number": "1.0.0",
-	"description": "",
-	"website_url": "",
 	"dependencies": [],
+	"description": "",
 	"extra": {
 		"godot": {
-			"authors": "koki",
-			"compatible_game_version": ["0.0.0"],
-			"compatible_mod_loader_version": ["7.0.0"]
+			"authors": [],
+			"compatible_game_version": [
+				"0.0.0"
+			],
+			"compatible_mod_loader_version": [
+				"7.0.0"
+			],
+			"config_schema": {
+
+			},
+			"description_rich": "",
+			"image": null,
+			"incompatibilities": [],
+			"load_before": [],
+			"optional_dependencies": [],
+			"tags": []
 		}
-	}
+	},
+	"name": "RandomizedOriginalMode",
+	"namespace": "koki",
+	"version_number": "1.0.0",
+	"website_url": ""
 }
