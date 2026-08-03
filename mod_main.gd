@@ -1,6 +1,6 @@
 extends Node
 
-const MOD_DIR := "koki-RandomizedClassicMode"
+const MOD_DIR := "koki-PlaylistRandomizer"
 
 var mod_dir_path := ""
 
