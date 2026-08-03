@@ -15,6 +15,6 @@ func install_script_hooks() -> void:
 	ModLoaderMod.add_hook(randomize_default_playlist, "res://scripts/scenes/game/game.gd", "generate_session_playlist")
 
 func randomize_default_playlist(chain: ModLoaderHookChain) -> void:
-	Log("running hook")
+	#Log("running hook")
 	Globals.default_playlist.shuffle()
 	chain.execute_next()
