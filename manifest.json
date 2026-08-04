@@ -10,9 +10,7 @@
 			"compatible_mod_loader_version": [
 				"7.0.0"
 			],
-			"config_schema": {
-
-			},
+			"config_schema": {},
 			"description_rich": "",
 			"image": null,
 			"incompatibilities": [],
@@ -23,6 +21,6 @@
 	},
 	"name": "PlaylistRandomizer",
 	"namespace": "koki",
-	"version_number": "1.0.0",
+	"version_number": "1.1.0",
 	"website_url": ""
 }
