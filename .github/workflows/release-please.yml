@@ -32,7 +32,7 @@ jobs:
         - uses: actions/checkout@v4
         
         - run: |
-            MOD_NAME=$(cat src/manifest.json | jq -r '.name')
+            MOD_NAME=$(cat manifest.json | jq -r '.name')
             echo "MOD_NAME=$MOD_NAME" >> $GITHUB_ENV
 
             mkdir --parents "mods-unpacked/koki-$MOD_NAME"
