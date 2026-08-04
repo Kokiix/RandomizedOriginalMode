@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bereuff7wtuqf"]
+
+[ext_resource type="Theme" uid="uid://dmo5286mg5yyr" path="res://themes/lobby_theme.tres" id="1_nt8hk"]
+[ext_resource type="Script" uid="uid://mxdkkj4y5jrd" path="res://scripts/components/character customization/button_class.gd" id="2_7i6yf"]
+
+[node name="RandomizeButton" type="CheckButton"]
+custom_minimum_size = Vector2(0, 32)
+size_flags_horizontal = 10
+size_flags_vertical = 4
+focus_neighbor_left = NodePath("../BackButton")
+focus_neighbor_right = NodePath("../ResetButton")
+focus_neighbor_bottom = NodePath(".")
+theme = ExtResource("1_nt8hk")
+text = "RANDOMIZE"
+
+[node name="ButtonClass" type="Node" parent="."]
+script = ExtResource("2_7i6yf")
+force_play_sound = true
+metadata/_custom_type_script = "uid://mxdkkj4y5jrd"
